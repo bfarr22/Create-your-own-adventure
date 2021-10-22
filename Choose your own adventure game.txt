@@ -1,0 +1,49 @@
+print('''
+.     .       .  .   . .   .   . .    +  .
+  .     .  :     .    .. :. .___---------___.
+       .  .   .    .  :.:. _".^ .^ ^.  '.. :"-_. .
+    .  :       .  .  .:../:            . .^  :.:\.
+        .   . :: +. :.:/: .   .    .        . . .:\
+ .  :    .     . _ :::/:               .  ^ .  . .:\
+  .. . .   . - : :.:./.                        .  .:\
+  .      .     . :..|:                    .  .  ^. .:|
+    .       . : : ..||        .                . . !:|
+  .     . . . ::. ::\(                           . :)/
+ .   .     : . : .:.|. ######              .#######::|
+  :.. .  :-  : .:  ::|.#######           ..########:|
+ .  .  .  ..  .  .. :\ ########          :######## :/
+  .        .+ :: : -.:\ ########       . ########.:/
+    .  .+   . . . . :.:\. #######       #######..:/
+      :: . . . . ::.:..:.\           .   .   ..:/
+   .   .   .  .. :  -::::.\.       | |     . .:/
+      .  :  .  .  .-:.":.::.\             ..:/
+ .      -.   . . . .: .:::.:.\.           .:/
+.   .   .  :      : ....::_:..:\   ___.  :/
+   .   .  .   .:. .. .  .: :.:.:\       :/
+     +   .   .   : . ::. :.:. .:.|\  .:/|
+     .         +   .  .  ...:: ..|  --.:|
+.      . . .   .  .  . ... :..:.."(  ..)"
+ .   .       .      :  .   .: ::/  .  .::\
+''')
+print("Welcome to Treasure Planet.")
+print("Your mission is to find the treasure!")
+
+mode = input('Do you travel by flying saucer or spaceship?\n')
+if mode == 'flying saucer':
+  print("Good choice!")
+  river = input('Green river ahead - swim or wait?\n')  
+  if river == 'swim':
+    print("Good choice!  You made it across!")
+    hole = input('Great job making it this far.  There is a hole in the ground - jump in, step over, or walk around?\n')
+    if hole == 'jump in':
+          print('You win!!!  Party all night with the aliens!!!')
+    elif hole == 'step over':
+          print('An alien has reached up to snatch you and has eaten you.  GAME OVER!!!')
+    elif hole == 'walk around':
+          print('You\'ve stepped in alien slime made of acid - lose a leg and die.  GAME OVER!!!')
+    else:  
+          print('GAME OVER LOSER!')
+  else:
+      print("You got eaten by alien crocodiles - GAME OVER!!!")
+else:
+  print("You got zapped by alien lasers - GAME OVER!!!")
